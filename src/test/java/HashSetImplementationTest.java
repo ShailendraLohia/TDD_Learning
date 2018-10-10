@@ -23,14 +23,14 @@ public class HashSetImplementationTest {
         assertEquals(0,hashSetImplementation.size());
     }
     @Test
-    public void add() {
+    public void addFunction() {
         hashSetImplementation=new HashSetImplementation();
         hashSetImplementation.add(10);
         hashSetImplementation.add(20);
         assertEquals(2,hashSetImplementation.size());
     }
     @Test
-    public void contains() {
+    public void containsFunction() {
         hashSetImplementation=new HashSetImplementation();
         hashSetImplementation.add(10);
         hashSetImplementation.add(20);
@@ -38,7 +38,7 @@ public class HashSetImplementationTest {
         assertEquals(true,hashSetImplementation.contains(10));
     }
     @Test
-    public void remove() {
+    public void removeFunction() {
         hashSetImplementation=new HashSetImplementation();
         hashSetImplementation.add(10);
         hashSetImplementation.add(20);
@@ -61,5 +61,20 @@ public class HashSetImplementationTest {
         hashSetImplementation.add(10);
         assertEquals(3,hashSetImplementation.size());
     }
+    /*@Test(expected = IndexOutOfBoundsException.class)
+    public void test() {
+        hashSetImplementation=new HashSetImplementation();
+        hashSetImplementation.add(10);
+        hashSetImplementation.add(20);
+        hashSetImplementation.add(30);
+        hashSetImplementation.add(40);
+        hashSetImplementation.add(50);
+        hashSetImplementation.add(60);
+        hashSetImplementation.add(70);
+        hashSetImplementation.add(80);
+        hashSetImplementation.add(90);
+        hashSetImplementation.add(100);
+        hashSetImplementation.add(110);
+    }*/
 
 }

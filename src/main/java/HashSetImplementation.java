@@ -20,6 +20,9 @@ public class HashSetImplementation {
     }
 
     public void add(int element) {
+        /*if(size()>data.length) {
+            throw new IndexOutOfBoundsException();
+        }*/
         if(!contains(element)) {
             data[++size] = element;
             //size++;
