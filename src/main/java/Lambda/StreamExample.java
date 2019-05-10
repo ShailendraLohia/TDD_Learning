@@ -25,5 +25,6 @@ public class StreamExample {
         int[] a = new int[]{1,2,3,4};
 
         Arrays.stream(a);
+
     }
 }
